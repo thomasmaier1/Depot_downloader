@@ -17,7 +17,6 @@ def get_csv(save_location):
     # Disable showing the download process
     profile.set_preference("browser.download.manager.showWhenStarting", False)
     # set desired download folder
-    # profile.set_preference("browser.download.dir", "C:\Development\Python\Webdriver_test\download")
     profile.set_preference("browser.download.dir", save_location)
     # disable "save to disk" prompt
     profile.set_preference("browser.helperApps.neverAsk.saveToDisk", "text/csv")
